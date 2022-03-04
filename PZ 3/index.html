@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="style.css">
+  <title>Задание 3</title>
+</head>
+<body>
+  <form id="form1" onsubmit="return false">
+    <h3>Шифрование и дешифрование</h3>
+    <div class="div-key">
+      <span>Ключ: </span><input id="input-key" type="text">
+    </div>
+    <div class="div-mode">
+      <input type="radio" name="mode" id="tp1" value="1" checked><label for="tp1">Шифровка</label>
+      <input type="radio" name="mode" id="tp2" value="2"><label for="tp2">Дешифровка</label>
+    </div>
+    <div>
+      <textarea id="input1" cols="45" rows="6" placeholder="Введите текст сюда"></textarea>
+      <button class="bdoit" onclick="doIt()">Преобразовать</button>
+      <textarea id="output1" cols="45" rows="6" readonly></textarea>
+      <p>При дешифровании убедитесь, что пробелы заменены на "_"</p>
+    </div>
+  </form>
+<script src="script.js"></script>
+</body>
+</html>
